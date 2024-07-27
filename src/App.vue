@@ -1,30 +1,46 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+    <nav class="custom-container">
+        <router-link to="/" class="logo">
+            <svg
+                fill="#000000"
+                height="64px"
+                width="64px"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 50 50"
+                xml:space="preserve"
+            >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                    <g id="Layer_1">
+                        <path
+                            d="M1,38h23v3H12v2h26v-2H26v-3h23V8H1V38z M3,10h44v26H3V10z"
+                        ></path>
+                    </g>
+                    <g></g>
+                </g>
+            </svg>
+            <h1>LienTv</h1>
+        </router-link>
+    </nav>
+    <router-view />
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
+@import "@/assets/global.scss";
 nav {
-  padding: 30px;
+    display: flex;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 5px;
     }
-  }
 }
 </style>
