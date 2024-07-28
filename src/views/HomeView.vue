@@ -12,7 +12,7 @@ export default {
     methods: {
         setChannel(channel) {
             this.channel = channel;
-        },
+        },    
     },
 };
 </script>

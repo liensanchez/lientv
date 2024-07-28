@@ -3,14 +3,14 @@ export default {
     props: {
         tvChannel: {
             type: String,
-            required: true
-        }
+            required: true,
+        },
     },
     computed: {
         iframeSrc() {
             return `https://a3.115tv.site/cvatt.html?get=${this.tvChannel}&start=true`;
-        }
-    }
+        },
+    },
 };
 </script>
 
@@ -21,6 +21,7 @@ export default {
             height="500px"
             :src="iframeSrc"
             frameborder="0"
+            allow="encrypted-media"
         ></iframe>
     </div>
 </template>
